@@ -1,0 +1,94 @@
+{
+  "env": {
+    "jest": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "globals": {
+    "before": true,
+    "browser": true,
+    "context": true,
+    "cy": true,
+    "Cypress": true,
+    "document": false,
+    "fetch": true,
+    "navigator": false,
+    "window": false,
+    "localStorage": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 9,
+    "requireConfigFile": false,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "import",
+    "jest",
+    "node",
+    "promise",
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
+    "arrow-parens": [
+      2,
+      "always"
+    ],
+    "class-methods-use-this": 0,
+    "comma-dangle": 0,
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "indent": 0,
+    "max-len": 0,
+    "no-alert": 0,
+    "no-console": 0,
+    "no-restricted-globals": 0,
+    "no-return-assign": [
+      "error",
+      "except-parens"
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id",
+          "_ensureIndex",
+          "_verifyEmailToken",
+          "_resetPasswordToken",
+          "_name"
+        ]
+      }
+    ],
+    "no-use-before-define": 0,
+    "padded-blocks": 0,
+    "prettier/prettier": 2,
+    "react/destructuring-assignment": 0,
+    "react/display-name": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-fragments": 2,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-wrap-multilines": 0,
+    "react/prop-types": 0,
+    "react/sort-comp": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
